@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html style="background-color: #101010">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetFinder</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <header id="nav-bar-placeholder"></header> <!--- Ne pas toucher -->
+    <body id="reset-bg">
+      <!-- Video -->
+      <!-- Source : https://www.youtube.com/watch?v=CUKrfKBxtOA -->
+      <video autoplay muted loop class="fade-in-video bg_video">
+        <source src="videos/video.mp4" type="video/mp4">
+      </video>
+      <div class="centered content">
+        <a class="primary-accueil-text fade-in-1">PetFinder</h1>
+        <a class="fade-in-1 secondary-accueil-text">PetFinder est un site web qui permet de retrouver votre animal de compagnie perdu.</p>
+        <a class="fade-in-1"></a>
+        <div>
+          <div class="fade-in-2 main-page-button" id="button_perdu">Animaux perdus</div>
+          <div class="fade-in-2 main-page-button" id="button_retrouvé">Animaux retrouvés</div>
+        </div>
+      </div>
+    </body>
+    <div id="footer-placeholder"></div> <!--- Ne pas toucher -->
+    <!-- Base du site: Script afin de charger la navbar et le footer (ne pas toucher)-->
+    <script>
+        $(function(){
+          $("#nav-bar-placeholder").load("placeholder-navbar.html");
+        });
+
+        $(function(){
+          $("#footer-placeholder").load("placeholder-footer.html");
+        });
+
+        var button1 = document.getElementById("button_perdu");
+        button1.addEventListener("click", function() {
+          window.location.href = "page-animal-perdu.html";
+        });
+
+        var button2 = document.getElementById("button_retrouvé");
+        button2.addEventListener("click", function() {
+          window.location.href = "page-animal-retrouvé.html";
+        });
+    </script>
+</html>

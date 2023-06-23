@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+    <div id="nav-bar-placeholder"></div> <!--- Ne pas toucher -->
+    <body>
+    <main>
+      <section id="accroche">
+        <br>
+        <h2> Animaux Perdus </h2>
+        <br>
+        <p> Des milliers de chiens et de chats sont perdus chaque année en France. Les propriétaires font face à la douleur de ne plus jamais revoir leurs compagnons à quatre pattes.  </p>
+        <p>Mais l'espoir demeure. En effet, vous pouvez augmenter vos chances de retrouver un chien perdu grâce à PetFinder.</p>
+        <p> Les belles histoires ne sont pas rares. Certains animaux disparaissent et sont retrouvés des années plus tard. La devise est de ne jamais abandonner.</p>
+        <br>
+        <br>
+      </section>
+      <section id="Boutton">
+        <br>
+        <a id="bouttonlien" href="page-animal-perdu-2.html">J'ai perdu mon animal</a>
+      </section>
+      <section id="exemple">
+          <h4> Votre animal :</h4>
+          <h5> Caractéristiques nécéssaire à la recherche de votre animal :</h5>
+          <ul>
+            
+            <li class="enregistrer">
+              <div></div>
+              
+              <p> Nom de l'animal : <br> Chien / Chat ? :<br> Croissement / Race dominante :<br> Sexe :<br> Couleur :<br> Puce électronique / Tatouage / Collier ?:<br> Date d'alerte :<br> Localisation :</p>
+            </li>
+          </ul>
+      </section>
+    </main>
+  </body>
+  <div id="footer-placeholder"></div> <!--- Ne pas toucher -->
+  <!-- Base du site: Script afin de charger la navbar et le footer (ne pas toucher)-->
+  <script>
+    $(function(){
+      $("#nav-bar-placeholder").load("placeholder-navbar.html");
+    });
+
+    $(function(){
+      $("#footer-placeholder").load("placeholder-footer.html");
+    });
+  </script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body class="perdu">
+    <div id="nav-bar-placeholder"></div> <!--- Ne pas toucher -->
+    <main2>
+      <section id="page2">
+      <h6> Formulaire : </h6><br><br>
+      <from method="post" action="traitement.php">
+        <label for="nom">Entrez le nom de votre animal :</label>
+        <br>
+        <input type="text" id="nom" name="nom"><br><br>
+        Votre animal est : <br>
+        <input type="radio" id="chat" name="espece" value="chat">
+        <label for="chat"> Un chat </label><br>
+        <input type="radio" id="chien" name="espece" value="chien">
+        <label for="chat"> Un chien </label><br><br>
+        <label for="nom">Entrez la race de votre animal :</label>
+        <br>
+        <input type="text" id="race" race="race"><br><br>
+        De quel sexe est-il ?  <br>
+        <input type="radio" id="masculin" name="espece" value="masculin">
+        <label for="chat"> De sexe masculin </label><br>
+        <input type="radio" id="feminin" name="espece" value="feminin">
+        <label for="chat"> De sexe feminin </label><br><br>
+        De quelle couleur est-il ?<br>
+        <select name="couleur">
+          <option value="Blond">Blond</option>
+          <option value="Noir">Noir</option>
+          <option value="Roux">Roux</option>
+          <option value="Brun">Brun</option>
+          <option value="Gris">Gris</option>
+        </select> <br><br>
+        Porte t-il : <br><br>
+        <input type="checkbox" id="puce" name="loc" value="puce">
+        <label for="chat"> Une puce électronique </label><br>
+        <input type="checkbox" id="tato" name="loc" value="tato">
+        <label for="chat"> Un tatouage </label><br>
+        <input type="checkbox" id="col" name="loc" value="col">
+        <label for="chat"> Un collier </label><br><br>
+        <label for="nom">Localisation :</label>
+        <br>
+        <input type="text" id="loca" name="loca"><br><br>
+        <label for="date">Date de disparition :</label>
+        <br>
+        <input type="date" id="dispa" name="dispa"><br><br>
+        <input type="submit" value="Envoyer">
+    </section>
+    </main2>
+    <div id="footer-placeholder"></div> <!--- Ne pas toucher -->
+  </body>
+  <div id="footer-placeholder"></div> <!--- Ne pas toucher -->
+  <!-- Base du site: Script afin de charger la navbar et le footer (ne pas toucher)-->
+  <script>
+    $(function(){
+      $("#nav-bar-placeholder").load("placeholder-navbar.html");
+    });
+
+    $(function(){
+      $("#footer-placeholder").load("placeholder-footer.html");
+    });
+  </script>
+</html>

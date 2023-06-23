@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Content -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <div id="nav-bar-placeholder"></div> <!--- Ne pas toucher -->
+    <body id="clear-bg">        
+ 
+        <!-- CREATION 2 COLONNES -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Creation de deux colonnes de même taille */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+
+
+
+<style>
+h1 {
+  text-align: center;
+  font-style: italic;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-image:url("https://kingcountypets.files.wordpress.com/2015/11/raskc-blog-banner1.jpg");
+}
+
+  dl{
+    background-color: blanchedalmond;
+    padding-top: 20px;
+    padding-bottom: 50px ;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  /*h2{
+    background-color: rgba(146, 91, 66, 0.685);
+    padding: 10px 10px 10px 10px ;
+  } */
+h2{
+  text-align: center;
+}
+
+  #rcorners1 {
+  border-radius: 25px;
+  background: rgba(146, 91, 66, 0.685);
+  width: 900x;
+  height: 45px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  background: blanchedalmond;
+  width: 900x;
+  height: 700px;  
+}
+
+</style>
+
+
+        
+<!-- ANIMAUX RETROUVES -->
+        <h1 class="font">Animaux retrouvés</h1>
+
+      
+<ul class="font">
+        <!-- COLONNE POUR LES CHIENS -->
+        <div class="row">
+            <div class="column">
+              <h2 id="rcorners1"> Chiens retrouvés :</h2>
+              <p>
+                <dl id="rcorners2">
+                  <dt><b>Jack Russell Terrier</b></dt>
+                  <dd>- Taille : 30,2cm</dd>
+                  <dd>- Poids : 6,4kg</dd>
+                  <dd>- Sexe : Femelle</dd>
+                  <dd>- Localisation : retrouvé à Evry (91)</dd>
+                  <br>
+                  <img src="https://www.unmec.fr/wp-content/uploads/2019/10/animal-dogs-puppy-1984506.jpg" height="60%">
+                </dl>
+              </p>
+
+                <p>
+                  <dl id="rcorners2">
+                    <dt><b>Shiba Inu</b></dt>
+                    <dd>- Taille : 41,1cm</dd>
+                    <dd>- Poids : 12,8kg</dd>
+                    <dd>- Sexe : Femelle</dd>
+                    <dd>- Localisation : retrouvé à Rungis (94)</dd>
+                    <br>
+                    <img src="https://lostdogsandiego.com/images/uploaded/dogs/21593.JPG" height="60%">
+                  </dl>
+                </p>
+            </div>
+
+        <!-- COLONNE POUR LES CHATS -->
+            <div class="column">
+              <h2 id="rcorners1"> Chats retrouvés :</h2>
+              <p>
+                <div>
+                <dl id="rcorners2">             
+                    <dt><b>Siamois</b></dt>
+                    <dd>- Taille : 29,7cm</dd>
+                    <dd>- Poids : 5,5kg</dd>
+                    <dd>- Sexe : Mâle</dd>
+                    <dd>- Localisation : retrouvé à Créteil (94)</dd>
+                    <br>
+                    <a class="no-image">Pas d'image incluse par l'utilisateur.</a>
+                </dl>
+              </div>
+              </p> 
+               <p>
+                <dl id="rcorners2">
+                    <dt><b>Persan</b></dt>
+                    <dd>- Taille : 36,1cm</dd>
+                    <dd>- Poids : 5,1kg</dd>
+                    <dd>- Sexe : Mâle</dd>
+                    <dd>- Localisation : retrouvé à Melun (77)</dd>
+                    <br>
+                    <a class="no-image">Pas d'image incluse par l'utilisateur.</a>
+                    
+                  </dl>
+              </p>
+            </div>
+          </div>
+
+
+        
+        <!-- AUTRES ANIMAUX -->
+          <h2 id="rcorners1">Autres animaux retrouvés :</h2>
+        <p> 
+          <dl id="rcorners2">
+            <dt><b>Lapin Nain</b></dt>
+            <dd>- Taille : 23,2cm</dd>
+            <dd>- Poids : 1,4kg</dd>
+            <dd>- Sexe : Femelle</dd>
+            <dd>- Localisation : retrouvé à Bobigny (93)</dd>
+            <br>
+            <img src="https://www.uncompagnon.fr/upload/annonces/76844/03-lapin-oeil-noir-2.jpg" height="60%">
+          </dl>
+        </p>
+        <p>
+          <dl id="rcorners2">
+            <dt><b>Furet</b></dt>
+            <dd>- Taille : 46,1cm</dd>
+            <dd>- Poids : 1,8kg</dd>
+            <dd>- Sexe : Mâle</dd>
+            <dd>- Localisation : retrouvé à Aubervilliers (93)</dd>
+            <br>
+            <img src="https://www.site-annonce.fr/sh-img/J50-25.jpg" height="60%">
+          </dl>
+        </p>
+            
+            
+
+
+          <h2 id="rcorners1">Animaux retrouvés par la SPA:</h2> <a href="https://sparegionale.com/animaux-retrouves/">cliquez ici</a> 
+        <br>
+
+
+</ul>
+
+
+
+        <div id="footer-placeholder"></div> <!--- Ne pas toucher -->
+    </body>
+
+    <!-- Base du site: Script afin de charger la navbar et le footer (ne pas toucher)-->
+    <script>
+        $(function(){
+          $("#nav-bar-placeholder").load("placeholder-navbar.html");
+        });
+
+        $(function(){
+          $("#footer-placeholder").load("placeholder-footer.html");
+        });
+    </script>
+</html>
